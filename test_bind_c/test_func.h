@@ -9,16 +9,20 @@
 #define TEST_FUNC_H_
 
 struct simple {
-  int s;
+  float s;
+  float s2;  // not used
 };
 
 struct input {
   int a;
   struct simple b;
+  struct simple b2; // not used
+  float float_array[3];
 };
 
 struct output {
-  int c;
+  float c;
+  float float_array[3];
 };
 
 void test_func(struct output *out, struct input *in);

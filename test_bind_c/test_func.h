@@ -18,11 +18,13 @@ struct input {
   struct simple b;
   struct simple b2; // not used
   float float_array[3];
+  int int_array[3];
 };
 
 struct output {
   float c;
   float float_array[3];
+  int int_array[3];
 };
 
 void test_func(struct output *out, struct input *in);
